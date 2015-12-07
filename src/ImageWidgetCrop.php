@@ -171,7 +171,7 @@ class ImageWidgetCrop {
     ]);
     $this->cropStorage->delete($crop);
     $this->imageStylesOperations($image_styles, $file_uri);
-    drupal_set_message(t('The crop "@cropType" are successfully delete for image "@filename"', [
+    drupal_set_message(t('The crop "@cropType" was successfully deleted for image "@filename"', [
       '@cropType' => $crop_type->label(),
       '@filename' => $this->fileStorage->load($file_id)->getFilename()
     ]));
