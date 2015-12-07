@@ -108,7 +108,7 @@ class ImageWidgetCrop {
 
       $this->updateCropProperties($crop, $crop_properties);
       $this->imageStylesOperations($image_styles, $field_value['file-uri']);
-      drupal_set_message(t('The crop "@cropType" are successfully updated for image "@filename"', ['@cropType' => $crop_type->label(), '@filename' => $this->fileStorage->load($field_value['file-id'])->getFilename()]));
+      drupal_set_message(t('The crop "@cropType" was successfully updated for image "@filename"', ['@cropType' => $crop_type->label(), '@filename' => $this->fileStorage->load($field_value['file-id'])->getFilename()]));
     }
   }
 
